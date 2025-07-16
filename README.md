@@ -1,7 +1,10 @@
-//=============================\
-|| Crafted with 💛 by Carlos ||
-|| and approved by 🦆 ||
-\=============================//
+---
+
+<p align="center">
+  <b>Crafted with 💛 by Carlos and approved by 🦆</b>
+</p>
+
+---
 # 🗃️ Kata: Task Manager
 
 ## ⏱️ Estimated Duration
@@ -51,8 +54,11 @@ This project focuses on implementing a simple task manager. The exercises explor
 * Using JUnit 5 for effective unit testing.
 * Managing object state and behavior through simple methods.
 
-//=============================\
-|| Crafted with 💛 by Carlos ||
-|| and approved by 🦆 ||
-\=============================//
+---
+
+<p align="center">
+  <b>Crafted with 💛 by Carlos and approved by 🦆</b>
+</p>
+
+---
 👉 github.com/carlosPc1987
