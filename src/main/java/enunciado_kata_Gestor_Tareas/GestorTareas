@@ -1,0 +1,91 @@
+# **🗃️ Kata: Gestor de Tareas**
+
+## **⏱️ Duración estimada**
+
+- 15 minutos
+
+## **🎯 Contexto**
+
+Eres responsable de implementar un pequeño gestor de tareas que permitirá crear,
+ marcar como completadas y mostrar tareas pendientes.
+
+---
+
+## **📋 Historias de Usuario**
+
+### **Historia 1**
+
+**Como** usuario,
+
+**quiero** crear una tarea indicando un título,
+
+**para** que pueda recordar qué debo hacer.
+
+---
+
+### **Historia 2**
+
+**Como** usuario,
+
+**quiero** marcar una tarea como completada,
+
+**para** saber qué tareas ya realicé.
+
+---
+
+## **🧪 Fase 1: Implementación guiada con tests existentes**
+
+Se proporcionan los tests de la clase `TaskTest`. Los alumnos deben **crear
+las clases y métodos** necesarios para que estos tests pasen.
+
+```java
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+public class TaskTest {
+
+    @Test
+    public void givenTitle_whenCreatingTask_thenTitleIsSet(){
+        Task myFirstTask = new Task("Push Commits");
+        assertEquals("Push Commits", myFirstTask.getTitle());
+    }
+
+    @Test
+    public void givenTask_whenMarkAsCompleted_thenIsCompletedTrue(){
+        Task completedTask = new Task("Completar Tarea");
+        completedTask.markAsCompleted();
+        assertTrue(completedTask.isCompleted());
+    }
+
+}
+
+```
+
+## **🧪 Fase 2: TDD Completo**
+
+Ahora los alumnos deben:
+
+1. Escribir sus propios testss para la siguiente historia de usuario.
+2. Implementar el código hasta que los testss pasen.
+
+---
+
+### **Historia 3**
+
+**Como** usuario,
+
+**quiero** ver una lista de las tareas pendientes,
+
+**para** saber qué me queda por hacer.
+
+---
+
+### **Historia 4**
+
+**Como** usuario,
+
+**quiero** poder obtener la cantidad total de tareas completadas,
+
+**para** conocer mi progreso.
